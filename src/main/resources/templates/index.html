@@ -17,6 +17,8 @@
                 <th>Apellido</th>
                 <th>Email</th>
                 <th>Telefono</th>
+                <th>Editar</th>
+                <th>Eliminar</th>
             </tr><!-- Encabezados -->
             
             <tr th:each="persona : ${personas}">
@@ -24,6 +26,7 @@
                 <td th:text="${persona.apellido}">Mostrar Apellido</td>
                 <td th:text="${persona.email}">Mostrar Email</td>
                 <td th:text="${persona.telefono}">Mostrar Telefono</td>
+                <th><a th:href="@{/editar/} + ${persona.idPersona}" th:text="Editar"/></th>
             </tr><!-- Objeto persona -->
 
         </table>
