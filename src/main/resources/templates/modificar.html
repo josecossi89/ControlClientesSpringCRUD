@@ -11,24 +11,24 @@
         <a th:href="@{/}">Regresar</a>
         <br/>
         <form th:action="@{/guardar}" method="post" th:object="${persona}" >
-             <br/>
+            <br/>
             <label for="nombre">Nombre:</label>
             <input type="text" name="nombre" th:fiel="*{nombre}"/>
-                <br/> <br/>
-                
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" th:fiel="*{apellido}"/>
-                    <br/> <br/>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" th:fiel="*{email}"/>
-                        <br/> <br/>
-                        
-                        <label for="telefono">Telefono:</label>
-                        <input type="text" name="telefono" th:fiel="*{telefono}"/>
-                            <br/> <br/>
-<input type="submit" name="telefono" th:fiel="*{telefono}"/>
-                            
-                            </form>
-                            </body>
-                            </html>
+            <br/> <br/>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" th:fiel="*{apellido}"/>
+            <br/> <br/>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" th:fiel="*{email}"/>
+            <br/> <br/>
+
+            <label for="telefono">Telefono:</label>
+            <input type="text" name="telefono" th:fiel="*{telefono}"/>
+            <br/> <br/>
+            <input type="submit" name="guardar" value="Guardar"/>
+
+        </form>
+    </body>
+</html>
