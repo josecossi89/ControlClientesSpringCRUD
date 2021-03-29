@@ -1,5 +1,6 @@
 package com.vzla.jc.web;
 
+import com.vzla.jc.domain.Persona;
 import com.vzla.jc.servicio.PersonaService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,11 @@ public class ControladorInicio {
 
         model.addAttribute("personas", personas);
         return "index";
+    }
+    
+    @GetMapping("/agregar")
+    public String agregar(Persona persona){
+        return "modificar";
     }
 
 }
